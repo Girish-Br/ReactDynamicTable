@@ -23,7 +23,7 @@ export default function App() {
   const handleSearch = (event) => {
     event.target.value == "" && setSearchData("");
     let nameArr = [];
-    data.students.map((student, index) => {
+    data.details.map((student, index) => {
       const { contractName, contractOwner, contractVal } = student;
       nameArr.push(contractName);
     });
